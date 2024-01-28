@@ -12,15 +12,12 @@ html {
 #navbar {
   display: flex;
   justify-content: space-between;
-  /* This will push the logo to the left and links to the right */
   align-items: center;
   background-color: #1a1e1f;
   overflow: hidden;
   position: sticky;
   top: 0;
-  /* Set the top edge of the navbar to stick at the top of the screen */
   z-index: 100;
-  /* Ensure navbar stays on top of other elements */
   padding: 20px 200px 20px 200px;
 }
 
@@ -35,20 +32,15 @@ html {
 
 #navbar a:hover {
   color: #00bfff;
-  /* Change link color on hover */
 }
 
 /* header styles */
 .header {
   background-image: url("../assets/tbc_img1.jpg");
   background-size: cover;
-  /* Cover the entire viewport */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   background-attachment: local;
-  /* The background image does not scroll with the page */
   background-position: center center;
-  /* Center the image in the page */
   background-size: 100%;
 
   color: #fff;
@@ -80,9 +72,7 @@ html {
 
 .aboutInfo a {
   text-decoration: none;
-  /* Removes the underline from links */
   color: #00adee;
-  /* Sets the link color */
   font-size: 20px;
 }
 
@@ -98,23 +88,17 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* Adjusts the spacing between cards */
   gap: 20px;
-  /* Space between rows and columns */
   padding: 50px 250px 50px 250px;
   color: white;
 }
 
 .card {
   flex-basis: calc(33% - 20px);
-  /* Width of each card minus the gap */
   border: 1px solid #2b2b2b;
-  /* Border for visualization */
   box-sizing: border-box;
-  /* Includes padding and border in the width */
   text-align: left;
   margin-bottom: 20px;
-  /* Space at the bottom of each card */
   border-radius: 10px;
   overflow: hidden;
 }
@@ -127,9 +111,7 @@ h1 {
 
 .cards a {
   text-decoration: none;
-  /* Removes the underline from links */
   color: #00adee;
-  /* Sets the link color */
 
   font-size: 16px;
 }
@@ -148,7 +130,6 @@ h1 {
 @media (max-width: 600px) {
   .card {
     flex-basis: calc(50% - 20px);
-    /* Adjust width for smaller screens */
   }
 }
 
@@ -165,7 +146,6 @@ h1 {
   position: relative;
   overflow: hidden;
   width: 100%;
-  /* Full width of the container */
 }
 
 .carousel-track-container {
@@ -175,25 +155,18 @@ h1 {
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
-  /* Smooth transition for sliding */
 }
 
 .carousel-slide {
   display: flex;
-  /* Align partner images side by side */
   justify-content: space-between;
-  /* Add space between partner images */
   flex: 0 0 100%;
-  /* Each slide should be 100% of the carousel's width */
   width: 100%;
-  /* Each slide should be 100% of the carousel's width */
 }
 
 .carousel-image {
   width: calc(33.333% - 30px);
-  /* Adjust width to account for margins */
   margin: 0 15px;
-  /* Add space between images */
 }
 
 .carousel-control {
@@ -296,7 +269,6 @@ h1 {
   font-size: 20px;
   line-height: 40px;
   display: none;
-  /* Hide answers initially */
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
@@ -307,16 +279,12 @@ h1 {
 
 .arrow {
   transition: transform 0.3s ease;
-  /* Smooth transition for arrow rotation */
   padding-top: 30px;
 }
 
-/* When the answer is visible, rotate the arrow */
 .faq-answer-active .arrow {
   transform: rotate(180deg);
 }
-
-/* Add more styling according to your preference */
 
 .footer {
   background-color: #1a1e1f;
@@ -327,7 +295,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* Align items to the top */
   padding: 20px;
   color: white;
 }
@@ -335,9 +302,7 @@ h1 {
 .footer-brand {
   display: flex;
   flex-direction: column;
-  /* Stack logo and text vertically */
   align-items: center;
-  /* Center align the items */
 }
 
 .footer-brand a{
@@ -347,11 +312,8 @@ h1 {
 .footer-social {
   display: flex;
   flex-direction: column;
-  /* Stack links and button vertically */
   align-items: flex-end;
-  /* Align the items to the right */
   height: 100%;
-  /* Full height to align with the logo vertically */
 }
 
 .social-link {
